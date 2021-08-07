@@ -46,8 +46,6 @@ col1, col2 = st.beta_columns([4,4])
 #=============================================================================
 # Image Recognition
 #=============================================================================
-
-
 if file is None:
     st.text("Please upload an image file")
 else:
@@ -83,7 +81,25 @@ else:
         st.markdown(str("__"+category_name+"__"))
         st.write(round(max * 100,2),"%"," match")
         st.write("\n\n")
-        st.write("Text to speech:")
-        st.markdown(str("__"+category_text+"__"))
+        # st.write("Text to speech:")
+        # st.markdown(str("__"+category_text+"__"))
+        
 
-#=============================================================================
+        # Text to Speech
+        from bokeh.models.widgets import Button
+        from bokeh.models import CustomJS
+
+        tts_button = Button(label="Speak", width=100)
+
+        tts_button.js_on_event("button_click", CustomJS(code=f"""
+            var u = new SpeechSynthesisUtterance();
+            u.text = "{category_text}";
+            u.lang = 'en-US'; 
+            speechSynthesis.speak(u);
+            """))
+        
+        st.bokeh_chart(tts_button)
+
+
+
+
