@@ -3,3 +3,4 @@ streamlit==0.82.0
 numpy==1.19.3
 opencv-python-headless==4.5.2.54
 scikit-image==0.18.1
+bokeh

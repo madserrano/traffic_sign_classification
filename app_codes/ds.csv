@@ -1,44 +1,44 @@
 id,category,text
-0,Speed limit (20km/h),Maximum Speed limit (20km/h) ahead
-1,Speed limit (30km/h),Maximum Speed limit (30km/h) ahead
-2,Speed limit (50km/h),Maximum Speed limit (50km/h) ahead
-3,Speed limit (60km/h),Maximum Speed limit (60km/h) ahead
-4,Speed limit (70km/h),Maximum Speed limit (70km/h) ahead
-5,Speed limit (80km/h),Maximum Speed limit (80km/h) ahead
-6,End of speed limit (80km/h),End of speed limit (80km/h) ahead
-7,Speed limit (100km/h),Maximum Speed limit (100km/h) ahead
-8,Speed limit (120km/h),Maximum Speed limit (120km/h) ahead
-9,No passing,No passing
-10,No passing for vehicles over 3.5 metric tons,No passing for vehicles over 3.5 metric tons
-11,Right-of-way at the next intersection,Right-of-way at the next intersection
-12,Priority road,Priority road
-13,Yield,Yield
-14,Stop,Stop
-15,No vehicles,No vehicles
-16,Vehicles over 3.5 metric tons prohibited,Vehicles over 3.5 metric tons prohibited
-17,No entry,No entry
-18,General caution,General caution
-19,Dangerous curve to the left,Dangerous curve to the left
-20,Dangerous curve to the right,"Sharp right curve, maximum recommended speed 40 km/h"
-21,Double curve,Double curve
-22,Bumpy road,Bumpy road ahead
-23,Slippery road,Road slippery when wet
-24,Road narrows on the right,Road narrows on the right
-25,Road work,Road work
-26,Traffic signals,Traffic signals ahead
-27,Pedestrians,Slow down. Pedestrian crossing ahead.
-28,Children crossing,Children crossing ahead
-29,Bicycles crossing,Bicycles crossing ahead
-30,Beware of ice/snow,Beware of ice/snow
-31,Wild animals crossing,Wild animals crossing
-32,End of all speed and passing limits,End of all speed and passing limits
-33,Turn right ahead,Very sharp right turn ahead
-34,Turn left ahead,Turn left ahead
-35,Ahead only,Ahead only
-36,Go straight or right,Go straight or right
-37,Go straight or left,Go straight or left
-38,Keep right,Keep right
-39,Keep left,Keep left
-40,Roundabout mandatory,Roundabout mandatory
-41,End of no passing,End of no passing
-42,End of no passing by vechiles over 3.5 metric tons,End of no passing by vechiles over 3.5 metric tons
+0,Speed limit (20km/h),Speed change ahead to 20 kilometer per hour.
+1,Speed limit (30km/h),Speed change ahead to 30 kilometer per hour.
+2,Speed limit (50km/h),Speed change ahead to 50 kilometer per hour.
+3,Speed limit (60km/h),Speed change ahead to 60 kilometer per hour.
+4,Speed limit (70km/h),Speed change ahead to 70 kilometer per hour.
+5,Speed limit (80km/h),Speed change ahead to 80 kilometer per hour.
+6,End of speed limit (80km/h),Speed restriction ahead to 70 kilometer per hour.
+7,Speed limit (100km/h),Speed change ahead to 100 kilometer per hour.
+8,Speed limit (120km/h),Speed change ahead to 120 kilometer per hour.
+9,No passing,Overtaking is prohibited.
+10,No passing for vehicles over 3.5 metric tons,"Do not overtake, for vehicles over 3.5 metric tons."
+11,Right-of-way at the next intersection,"At the next intersection, stop and give the right-of way."
+12,Priority road,"Priority road, begins"
+13,Yield,"Slow down, and yield the right-of-way to pedestrians. Vehicles are approaching from another direction."
+14,Stop,Completely Stop.
+15,No vehicles,"No vehicles, Beyond this point."
+16,Vehicles over 3.5 metric tons prohibited,"Over 3.5 metric tons vehicles, are prohibited."
+17,No entry,Entry prohibited.
+18,General caution,General caution ahead.
+19,Dangerous curve to the left,"Slow down, and keep well to the left."
+20,Dangerous curve to the right,"Slow down, and keep well to the right."
+21,Double curve,"Slow down, multiple curves ahead."
+22,Bumpy road,"Bump up ahead, on the road."
+23,Slippery road,"Slow down, with extreme caution, as the road is wet ahead."
+24,Road narrows on the right,"Road narrows, right Lane ends."
+25,Road work,Road work ahead.
+26,Traffic signals,Traffic signals ahead.
+27,Pedestrians,"Slow down, Pedestrian crossing ahead."
+28,Children crossing,"Slow down, children crossing ahead."
+29,Bicycles crossing,"Slow down, bicycles crossing ahead."
+30,Beware of ice/snow,Caution! snow and ice falling from overpass.
+31,Wild animals crossing,"Wild animals crossing, ahead."
+32,End of all speed and passing limits,"No restriction on speed, and passing limits."
+33,Turn right ahead,Turn right ahead.
+34,Turn left ahead,Turn left ahead.
+35,Straight ahead only,Straight ahead only.
+36,Go straight or right,"Go straight, or turn right."
+37,Go straight or left,"Go straight, or turn left."
+38,Keep right,Warning! keep right to the median ahead.
+39,Keep left,Warning! keep left to the median ahead.
+40,Roundabout mandatory,"Slow down, Roundabout ahead."
+41,End of no passing,Overtaking allowed.
+42,End of no passing by vechiles over 3.5 metric tons,"Overtaking allowed, by vehicles over 3.5 metric tons."

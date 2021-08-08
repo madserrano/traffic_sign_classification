@@ -12,30 +12,30 @@ from skimage import io
 import pandas as pd
 import tensorflow as tf
 
+# Header/Banner
+st.image("header.png")
 
-def model_id_find(radio_sel):
-    mod_id=0
-    if radio_sel == 'TensorFlow/Keras':
-        mod_id = 0
-    elif radio_sel == 'PyTorch':
-        mod_id = 1
-    return mod_id
+## FOR MODEL SELECTION RADIO BUTTON
+# def model_id_find(radio_sel):
+#     mod_id=0
+#     if radio_sel == 'TensorFlow/Keras':
+#         mod_id = 0
+#     elif radio_sel == 'PyTorch':
+#         mod_id = 1
+#     return mod_id
 
 
-def mod_select(id):
-    model_name = 'model'+str(id)+'.h5'
-    return tf.keras.models.load_model(model_name, compile = False)
+# def mod_select(id):
+#     model_name = 'model'+str(id)+'.h5'
+#     return tf.keras.models.load_model(model_name, compile = False)
+
+# # radio button for categories
+# st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
+# model_selection_button = st.radio("Select Model",('TensorFlow/Keras','PyTorch'))
 
 
 # loading datasource for link fetching
 ds = pd.read_csv('ds.csv')
-
-# Header/Banner
-# st.image("header.png")
-
-# radio button for categories
-st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
-model_selection_button = st.radio("Select Model",('TensorFlow/Keras','PyTorch'))
 
 # File upload button
 file = st.file_uploader(" ", type=["jpg", "png"])
@@ -50,9 +50,13 @@ if file is None:
     st.text("Please upload an image file")
 else:
     with col1:
+        # Load the model via model selection radio button
+        # model_id= model_id_find(model_selection_button)
+        # model = mod_select(model_id)
+        
         # Load the model
-        model_id= model_id_find(model_selection_button)
-        model = mod_select(model_id)
+        model_name = 'model0.h5'
+        model = tf.keras.models.load_model(model_name, compile = False)
         
         # Load and display input image
         img = io.imread(file)
@@ -81,15 +85,12 @@ else:
         st.markdown(str("__"+category_name+"__"))
         st.write(round(max * 100,2),"%"," match")
         st.write("\n\n")
-        # st.write("Text to speech:")
-        # st.markdown(str("__"+category_text+"__"))
-        
-
+               
         # Text to Speech
         from bokeh.models.widgets import Button
         from bokeh.models import CustomJS
 
-        tts_button = Button(label="Speak", width=100)
+        tts_button = Button(label="Click to speak", width=100)
 
         tts_button.js_on_event("button_click", CustomJS(code=f"""
             var u = new SpeechSynthesisUtterance();
@@ -99,7 +100,10 @@ else:
             """))
         
         st.bokeh_chart(tts_button)
+        
+        # For debugging purposes only
+        # st.write("Text to speech:")
+        # st.markdown(str("__"+category_text+"__"))
 
-
-
-
+# Footer
+st.image("footer.png")
