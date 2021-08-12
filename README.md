@@ -1,4 +1,4 @@
-# Traffic_sign_classification
+# Traffic Sign Classification
 Traffic Sign Classification model using CNN
 
 Image classification is a Machine Learning method that recognizes an input image and predicts its category or class. Several factors and challenges are associated with building classification models, such as image variations, imbalanced datasets, and overfitting. The most common network model for building an image classification problem is Convolutional Neural Network (CNN). Tensorflow Keras and Pytorch are the most widely used libraries to train and compile a CNN model. Training a CNN model requires just enough features of an image to produce a good result, unlike other types of Neural Networks. In this project, CNN was leveraged to solve a Traffic Sign Classification problem.
@@ -12,6 +12,6 @@ Three methods were conducted to generate a model that could provide the most log
 
 It was concluded that a good quality model can be achieved with adequate and balanced dataset. The accuracy of Model 2 can be sufficient for experimental level, but for a more robust model, one must invest a great amount of time and sufficient machine processor to train it.
 
-The final version of this project runs in a public DNS with URL: http://ts-classification.herokuapp.com/. Streamlit web framework was used to build the user interface and the whole set-up was compiled in a docker image, deployed to Heroku cloud service.
+The final version of this project runs in a public DNS with URL: https://ts-classify-docker.herokuapp.com/. Streamlit web framework was used to build the user interface and the whole set-up was compiled in a docker image, deployed to Heroku cloud service.
 
 
