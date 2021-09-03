@@ -14,4 +14,9 @@ It was concluded that a good quality model can be achieved with adequate and bal
 
 The final version of this project runs in a public DNS with URL: https://ts-classify-docker.herokuapp.com/. Streamlit web framework was used to build the user interface and the whole set-up was compiled in a docker image, deployed to Heroku cloud service.
 
+## Code Contributors:
+2. https://github.com/jonatasaguiar (CNN model 1 Keras)
+3. https://github.com/madserrano (front-end, CNN model 2 Keras)
+4. https://github.com/iamAjayDahiya (CNN model 3 pytorch)
+
 
